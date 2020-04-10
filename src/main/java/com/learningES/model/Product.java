@@ -1,7 +1,10 @@
 package com.learningES.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
 
+// this annotation indicates that an instance of this class will be stored in  Elasticsearch in an index called as "products" 
+@Document(indexName = "products")
 public class Product {
 
 	@Id
